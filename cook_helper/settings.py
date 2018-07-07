@@ -25,7 +25,7 @@ SECRET_KEY = '9d*)7zz_yy=^9+$opej4)0$3#6)_a%wp!kb@*df#h130e6(p^5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['213.111.120.68']  # 1
+ALLOWED_HOSTS = ['213.111.120.68', '1digo.pythonanywhere.com']  # 1
 
 
 # Application definition
