@@ -25,8 +25,9 @@ SECRET_KEY = '9d*)7zz_yy=^9+$opej4)0$3#6)_a%wp!kb@*df#h130e6(p^5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['213.111.120.68', '1digo.pythonanywhere.com']  # 1
+ALLOWED_HOSTS = ['213.111.120.68', '1digo.pythonanywhere.com', '127.0.0.1', 'localhost']  # 1
 
+CORS_ORIGIN_ALLOW_ALL=True
 
 # Application definition
 
@@ -39,9 +40,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',  # 4
     'dishes',  # 5
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
