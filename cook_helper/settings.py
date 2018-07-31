@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['213.111.120.68', '1digo.pythonanywhere.com', '127.0.0.1', 'localhost']  # 1
 
-CORS_ORIGIN_ALLOW_ALL=True
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'rest_framework',  # 4
     'dishes',  # 5
     'corsheaders',  # 6
+    'multiselectfield',  # 7
 ]
 
 MIDDLEWARE = [
