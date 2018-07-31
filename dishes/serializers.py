@@ -33,5 +33,6 @@ class DishSerializer(DefaultModelSerializer):
         """Meta class to map serializer's fields with the model fields."""
         model = Dish
 
-        fields = ('id', 'name', 'dish_type', 'seasons', 'difficulty', 'priority', 'last_used_date')
+        fields = ('id', 'name', 'dish_type', 'seasons', 'difficulty',
+                  'priority', 'raw', 'is_post', 'is_diet', 'last_used_date')
 
